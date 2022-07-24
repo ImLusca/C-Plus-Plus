@@ -95,6 +95,8 @@ Node* findCycleLinkedList(Node* head) {
     tortoise = head;
 
     while (tortoise != hare) {
+        tortoise = tortoise->next;
+        hare = hare->next;
     }
 }
 
